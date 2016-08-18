@@ -1,5 +1,5 @@
 CREATE TABLE authorities(
-  username varchar(40) NOT NULL PRIMARY KEY,
+  username varchar(40) NOT NULL,
   authority varchar(40) NOT NULL
 );
 CREATE TABLE users(
@@ -10,6 +10,7 @@ CREATE TABLE users(
 );
 
 INSERT INTO authorities(username, authority)VALUES('andy', 'ROLE_USER');
+INSERT INTO authorities(username, authority)VALUES('root', 'ROLE_USER');
 INSERT INTO authorities(username, authority)VALUES('root', 'ROLE_ADMIN');
 INSERT INTO authorities(username, authority)VALUES('rootandy', 'ROLE_USER,ROLE_ADMIN');
 
